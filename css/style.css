@@ -1,0 +1,53 @@
+body {
+  font-family: "Dank mono", monospace;
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/025/977/194/large/soraya-heidary-background-11.jpg?1587505404");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.characters-name-container {
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to right bottom, #4600e7, #6f00e6, #8c00e4, #a500e3, #ba00e1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-name__inputs{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characters-container__img{
+    margin-top: 425px;
+}
+
+.characters-container__img input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+    width: 100px;
+}
+
+
+
+.characters-name-container input{
+  text-align: center;
+  border-radius: 15px;
+  border: solid blue 2px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.characters-name-container input:focus{
+    outline: none;
+    background-color:  #d3d3d3;
+}
+
+

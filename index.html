@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Run</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./Concurrent.Thread-full-20090713.js" type="text/javascript"></script> 
+     <script src="./index.js"></script>  
+</head>
+
+<body>
+    <main>
+        <section class="characters-name-container">
+            <div class="characters-name__inputs">              
+                    <label for="inputCharacter1">Nombre del personaje 1:</label>
+                    <input type="text" id="inputCharacter1" placeholder="Escribe un nombre">
+
+                    <label for="inputCharacter2">Nombre del personaje 2:</label>
+                    <input type="text" id="inputCharacter2" placeholder="Escribe un nombre">
+
+                    <label for="inputCharacter3">Nombre del personaje 3:</label>
+                    <input type="text" id="inputCharacter3" placeholder="Escribe un nombre">
+                    <button class="button-click" onclick="execute()">
+                        ¡RUN!
+                    </button>
+            </div>
+        </section>
+
+        <section class="characters-container">
+            <div class="characters-container__img">
+                <img src="./assets/personaje1.gif" id="character1-img" style="display: none;"><input type="text" readonly
+                    id="input1" disabled><br>
+                <img src="./assets/personaje2.gif" id="character2-img" style="display: none;"><input type="text" readonly
+                    id="input2" disabled><br>
+                <img src="./assets/personaje3.gif" id="character3-img" style="display: none;"><input type="text" readonly
+                    id="input3" disabled><br>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
