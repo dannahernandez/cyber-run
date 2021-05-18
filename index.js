@@ -5,7 +5,7 @@ function character(number, nameLabel, label, img, end) {
 
     while(i <= end){
         document.getElementById(label).value = parseInt(i/10000) + "mts";
-        //Hace que el caballo se vaya moviendo a la derecha
+        //Makes the character moves to the right
         document.getElementById(img).style.paddingLeft = 100 + parseInt(i/100) + "px";
         i++;
         console.log(i);
