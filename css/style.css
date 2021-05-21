@@ -1,4 +1,5 @@
 body {
+  
   font-family: "Dank mono", monospace;
   background-image: url("https://cdna.artstation.com/p/assets/images/images/025/977/194/large/soraya-heidary-background-11.jpg?1587505404");
   background-size: cover;
@@ -6,48 +7,118 @@ body {
 }
 
 .characters-name-container {
-    width: 100%;
-    height: 70px;
-    background-image: linear-gradient(to right bottom, #4600e7, #6f00e6, #8c00e4, #a500e3, #ba00e1);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 70%;
+  background-image: linear-gradient(
+    to right bottom,
+    #4600e7,
+    #6f00e6,
+    #8c00e4,
+    #a500e3,
+    #ba00e1
+  );
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0.95;
+  left: 28%;
+  top: 15%;
+  border-radius: 15px;
 }
 
-.characters-name__inputs{
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.characters-container__img{
-    margin-top: 425px;
+.characters-name-title {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  height: 30%;
+  margin: 0 30px 0 30px;
+  line-height: 1.6;
 }
 
-.characters-container__img input{
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 1.8rem;
-    width: 100px;
+.characters-name-title h1{
+  font-size: 40px;
 }
 
+.menu-items-container {
+  width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.menu-items {
+  margin-top: 30px;
+  font-size: 30px;
+  width: 580px;
+}
 
-.characters-name-container input{
+.menu-items button{
+  margin: auto;
+}
+
+.menu-items input{
+    font-size: 25px ;
+}
+
+.characters-container__img {
+  margin-top: 425px;
+}
+
+.characters-container__img input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  width: 100px;
+}
+
+.characters-name-container input {
   text-align: center;
   border-radius: 15px;
   border: solid blue 2px;
-  height: 20px;
+  height: 30px;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
 }
 
-.characters-name-container input:focus{
-    outline: none;
-    background-color:  #d3d3d3;
+.characters-name-container input:focus {
+  outline: none;
+  background-color: #d3d3d3;
 }
 
+.menu-items .button-click{
+    display: block;
+}
 
+.podium{
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  border-radius: 15px;
+}
+
+.podium_winner{
+  width: 100%;
+  height: 75%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.podium__others{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
