@@ -3,11 +3,11 @@ var k = 1;
 
 function character(number, nameLabel, label, img, end) {
     var i = 0;
-    while (i <= end) {
-        document.getElementById(label).value = parseInt(i / 10000) + "mts";
+
+    while(i <= end){
+        document.getElementById(label).value = parseInt(i/10000) + "mts";
         //Makes the character moves to the right
-        document.getElementById(img).style.paddingLeft =
-            100 + parseInt(i / 100) + "px";
+        document.getElementById(img).style.paddingLeft = 100 + parseInt(i/100) + "px";
         i++;
         console.log(i);
     }
