@@ -1,5 +1,5 @@
-var count = 1;
-var k = 1;
+let count = 1;
+let k = 1;
 
 function character(number, nameLabel, label, img, end) {
     var i = 0;
@@ -9,7 +9,6 @@ function character(number, nameLabel, label, img, end) {
         //Makes the character moves to the right
         document.getElementById(img).style.paddingLeft = 100 + parseInt(i/100) + "px";
         i++;
-        console.log(i);
     }
 
     characterName = document.getElementById(nameLabel).value;
@@ -32,24 +31,18 @@ function execute() {
 
 function podium(characterNumber) {
     if (count === 1) {
-        noneCharacter("character" + characterNumber + "-img", "character" + characterNumber + "-win","input"+characterNumber, count);
+        noneCharacter("character" + characterNumber + "-img", "character" + characterNumber + "-win","input"+characterNumber);
         count++;
     } else {
-        noneCharacter("character" + characterNumber + "-img","character" + characterNumber + "-lose","input"+characterNumber, count);
+        noneCharacter("character" + characterNumber + "-img","character" + characterNumber + "-lose","input"+characterNumber);
     }
 }
 
-function noneCharacter(element, element2,element3, position) {
-    if (position === 1) {
+function noneCharacter(element, element2,element3) {
         document.getElementById(element).style.display = "none";
         document.getElementById(element3).style.display = "none";
         document.getElementById(element2).style.display = "inline";
-    } else {
-        document.getElementById(element).style.display = "none";
-        document.getElementById(element3).style.display = "none";
-        document.getElementById(element2).style.display = "inline";
-    }
 }
 
-var place = () => k++;
+const place = () => k++;
 
